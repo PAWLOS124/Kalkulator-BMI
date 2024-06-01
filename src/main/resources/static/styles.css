@@ -1,0 +1,48 @@
+body {
+    font-size: 2em; /* Zwiększa rozmiar tekstu w całym dokumencie */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.form-container, .result-container {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+.image-container {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Dodaje zaokrąglone rogi do obrazu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodaje cień do obrazu */
+}
+h1 {
+    font-size: 2em; /* Zwiększa rozmiar tekstu nagłówka */
+}
+form p, .result-container p {
+    margin: 10px 0;
+}
+input[type="number"], input[type="submit"], a {
+    font-size: 1em; /* Ustala większy rozmiar tekstu dla pól wejściowych, przycisku i linku */
+    border-radius: 5px; /* Dodaje zaokrąglone rogi do pól wejściowych, przycisku i linku */
+    padding: 10px; /* Dodaje wewnętrzne odstępy do pól wejściowych, przycisku i linku */
+    border: 1px solid #ccc; /* Dodaje obramowanie do pól wejściowych, przycisku i linku */
+}
+input[type="submit"], a {
+    background-color: #4CAF50; /* Dodaje tło do przycisku i linku */
+    color: white; /* Dodaje kolor tekstu do przycisku i linku */
+    cursor: pointer; /* Zmienia kursor na wskaźnik przy najechaniu na przycisk i link */
+    text-decoration: none; /* Usuwa podkreślenie linku */
+    display: inline-block; /* Ustawia link jako element blokowy */
+    margin-top: 10px; /* Dodaje górny margines do linku */
+}
+input[type="submit"]:hover, a:hover {
+    background-color: #45a049; /* Zmienia kolor tła przycisku i linku przy najechaniu */
+}

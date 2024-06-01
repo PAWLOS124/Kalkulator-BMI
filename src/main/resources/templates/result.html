@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Wynik BMI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<h1 style="text-align: center;">Wynik BMI</h1>
+<div class="container">
+    <div class="result-container">
+        <p>Twoje BMI wynosi: <span th:text="${bmi}"></span></p>
+        <p th:text="${category}"></p>
+        <a href="/">Oblicz ponownie</a>
+    </div>
+    <div class="image-container">
+        <img src="/bmi_image.png" alt="BMI Image">
+    </div>
+</div>
+</body>
+</html>
